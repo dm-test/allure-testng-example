@@ -36,12 +36,12 @@ public class TestClass {
         Steps.checkSumStep(5, 4, 9);
     }
 
-    @Test
+//    @Test
     public void simpleTest3() {
         Steps.checkSubtractionStep(10, 8, 2);
     }
 
-        @Test
+//    @Test
     public void simpleTest4() throws IOException {
         String darkSouls = "Dark souls 3";
         Steps.checkStringEqualsStep(darkSouls, darkSouls);
@@ -60,7 +60,7 @@ public class TestClass {
     }
 
     /**
-     * dhshfdksjfkzjzkfjzkzzfzfzcz.
+     * Simple test for @Description illustration
      */
 //    @Test
     @Description(useJavaDoc = true)
@@ -68,7 +68,7 @@ public class TestClass {
         Assert.assertTrue(1 == 1);
     }
 
-    //    @Test
+//    @Test
     @Description(value = "Тест проверяет эквивалентность единицы единице")
     public void simpleTest7_1() {
         Assert.assertTrue(1 == 1);
@@ -98,7 +98,7 @@ public class TestClass {
         Steps.checkSinStep(0, 0);
     }
 
-    //    @Test
+//    @Test
     @Flaky
     public void testDemoFlaky() {
         int randomNum = ThreadLocalRandom.current().nextInt(0, 2);
@@ -109,8 +109,9 @@ public class TestClass {
         }
     }
 
-    //    @Test
+//    @Test
     @Issue(value = "FGY-4627")
+    @TmsLink(value = "TL-135")
     public void simpleTest15() {
         Assert.assertTrue(1 == 1);
     }
@@ -121,7 +122,7 @@ public class TestClass {
         Assert.assertTrue(1 == 1);
     }
 
-    //    @Test
+//    @Test
     @Link(name = "Ссылка", url = "http://yandex.ru")
     public void checkSubtractionWithLinkTest() {
         Steps.checkSubtractionStep(15, 5, 10);
@@ -155,19 +156,19 @@ public class TestClass {
         throw new Exception("что-то пошло не так");
     }
 
-    //    @Test
+//    @Test
     @Owner(value = "Пупкин Валерий Иванович")
     public void testDemoOwner() {
         Steps.checkSumStep(1, 2, 3);
     }
 
-    //    @Test
+//    @Test
     @Muted
     public void testDemoMuted() {
         Steps.checkSubtractionStep(7, 2, 4);
     }
 
-    //    @Test
+//    @Test
     @Severity(value = SeverityLevel.BLOCKER)
     public void testDemoSeverity() {
         Steps.checkSubtractionStep(6, 1, 5);
