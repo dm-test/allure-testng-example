@@ -47,13 +47,13 @@ public class TestClass {
         Steps.checkStringEqualsStep(darkSouls, darkSouls);
     }
 
-        @Test
+    @Test
     public void simpleTest5() throws IOException {
         Steps.readJsonStep();
         Assert.assertTrue(true);
     }
 
-        @Test
+    @Test
     public void simpleTest6() {
         Steps.addLinkSber();
         Assert.assertTrue(true);
@@ -68,7 +68,7 @@ public class TestClass {
         Assert.assertTrue(1 == 1);
     }
 
-//    @Test
+    @Test
     @Description(value = "Тест проверяет эквивалентность единицы единице")
     public void simpleTest7_1() {
         Assert.assertTrue(1 == 1);
